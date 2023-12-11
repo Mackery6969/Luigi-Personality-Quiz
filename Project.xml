@@ -30,8 +30,8 @@
 	<!-- _____________________________ Path Settings ____________________________ -->
 
 	<set name="BUILD_DIR" value="export" />
-	<source path="source" />
-	<assets path="assets" />
+	<source path="source" embed="true"/>
+	<assets path="assets" embed="true"/>
 
 	<!-- _______________________________ Libraries ______________________________ -->
 

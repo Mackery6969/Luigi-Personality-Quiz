@@ -11,7 +11,7 @@ import flixel.util.FlxTimer;
 class TitleState extends FlxState
 {
 	var background:FlxSprite;
-	var luigiNum:Int = 0;
+	public static var luigiNum:Int = 0;
 	var luigi:FlxSprite;
 	var logo:FlxSprite;
 
@@ -117,6 +117,7 @@ class TitleState extends FlxState
 
 		if (FlxG.keys.justPressed.ENTER && selected == 0 && canSelect)
 		{
+			//FlxG.sound.music.stop();
 			trace('goto PlayState');
 			FlxG.switchState(new PlayState());
 		}
